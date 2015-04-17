@@ -1,0 +1,13 @@
+language: java
+jdk:
+- oraclejdk8
+before_install:
+- chmod +x gradlew
+script: "./gradlew publish -S"
+env:
+  global:
+  - TERM=dumb
+  - secure: MD4EZPMa10J9Yb6KepBUwI3vv5iQBeLjySZxnw+pYlBw2RqjghsUsgxTRv0PlU3O4edlXm273D7S46wt7YSs5ygwZ57H+AaeRdVq1wMSr9xoXAnWX7A//KWYdEY1zCtKDIXWu39Wj2z7b4Aze4AoSckJLVfcqrwD0Q8opygPX4Y=
+  - secure: DyEflKy3PTizNyir7Si20uQmaXHmjmfcqwSTPHL69pVTEofyLSAakh7XfQ7RWYHadvcZY2JqDr7g79iqnh/zv0VHltq/IWdflGGLqjiMfJS4eBn1D2NQsU5nzMUqyhwPcXhtJINuEMeWjdm6lpnG9eEqblpio/F1zglSWeeIrRk=
+notifications:
+  email: false
